@@ -9,9 +9,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Getter
 @Setter
 @Builder
-@XmlRootElement(name = "user")
+@XmlRootElement(name = "person")
 
 public class Person {
+    private int id;
     private String name;
     private int year;
     private int age;

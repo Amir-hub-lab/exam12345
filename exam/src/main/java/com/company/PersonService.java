@@ -17,7 +17,7 @@ public class PersonService {
     @GET
     @Path("/{PersonId}")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    public Person getPerson(@PathParam("PersonId") Integer PersonId) {
+    public Person getPerson(@PathParam("PersonId") Integer id) {
         return PersonDao.getPersonById(1);
     }
 
@@ -30,7 +30,7 @@ public class PersonService {
     @DELETE
     @Path("/{PersonId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public void delete(@PathParam("PersonId") int PersonId){
-        PersonDao.deleteById(PersonId);
+    public void delete(@PathParam("PersonId") int id){
+        PersonDao.deleteById(id);
     }
 }
