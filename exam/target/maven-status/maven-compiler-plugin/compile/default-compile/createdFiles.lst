@@ -1,0 +1,6 @@
+com\company\App.class
+com\company\PersonService.class
+com\company\Person.class
+com\company\DB.class
+com\company\PersonDao.class
+com\company\Person$PersonBuilder.class
